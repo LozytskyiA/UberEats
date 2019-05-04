@@ -5,23 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./img/site_ico.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
-  <title>uber eats</title>
+  <title>Uber Eats</title>
 </head>
 
 <body>
-  <div class="section__wrapper">
+  <div class="section__wrapper header__wrapper">
     <div class="section header">
       <a href="javscript:void(0)" class="header__logo">
         <img class="header__logo-img" src="./img/logo.svg" alt="uber eats" />
       </a>
-      <form action="#" class="location-form">
-        <input type="text" name="to where" placeholder="asap" class="location-form__input location-form__input_from">
+      <div class="location">
+        <div class="location__time">ASAP</div>
         <span class="location-form__beetwen-text">to</span>
-        <input type="text" name="to where" placeholder="ul. Tarasivska St, 16" class="location-form__input location-form__input_where">
-      </form>
+        <form action="#" class="location-form"></form>
+        <input type="text" name="to where" placeholder="Enter your adress"
+          class="location-form__input location-form__input_where">
+        </form>
+      </div>
+
       <div class="header-buttons">
         <button type="submit" class="btn header-buttons__btn_sing-in">Sign In</button>
         <button type="submit" class="btn header-buttons__btn_register">Register</button>
@@ -31,6 +36,140 @@
       </a>
     </div>
   </div>
+  <main class="section__wrapper main">
+    <div class="section form__section">
+      <form class="search-form">
+        <input type="search" placeholder="Search for restaurant or cuisine" class="search-form__input">
+      </form>
+    </div>
+    <div class="section restaurants__section">
+      <div class="restaurants__section-title">Kyiv Restaurants</div>
+      <div class="restourant-selection">
+        <div class="restourant-selection__item">
+          <div class="restourant-selection__item-img restourant-selection__item-img_macdonalds"></div>
+          <div class="restourant-selection__item-name">Макдоналдс</div>
+          <div class="restourant-selection__item-kitchen">₴₴ • Бургеры</div>
+          <div class="restourant-selection__item-time">25 - 35 Min</div>
+        </div>
+        <div class="restourant-selection__item">
+          <div class="restourant-selection__item-img restourant-selection__item-img_wokwei"></div>
+          <div class="restourant-selection__item-name">WOKWEI</div>
+          <div class="restourant-selection__item-kitchen">₴ • Китайська • Азіатська</div>
+          <div class="restourant-selection__item-time">40 - 50 Min</div>
+        </div>
+        <div class="restourant-selection__item">
+          <div class="restourant-selection__item-img restourant-selection__item-img_yizha"></div>
+          <div class="restourant-selection__item-name">YIZHA</div>
+          <div class="restourant-selection__item-kitchen">₴₴ • Американська • Бургери • Вулична їжа</div>
+          <div class="restourant-selection__item-time">35 - 45 Min</div>
+        </div>
+        <div class="restourant-selection__item">
+          <div class="restourant-selection__item-img restourant-selection__item-img_musafir"></div>
+          <div class="restourant-selection__item-name">Musafir (вул. Саксаганського)</div>
+          <div class="restourant-selection__item-kitchen">₴₴ • Близькосхідна</div>
+          <div class="restourant-selection__item-time">30 - 40 Min</div>
+        </div>
+        <div class="restourant-selection__item">
+          <div class="restourant-selection__item-img restourant-selection__item-img_wokwei-2"></div>
+          <div class="restourant-selection__item-name">WOKWEI</div>
+          <div class="restourant-selection__item-kitchen">₴ • Китайська • Азіатська</div>
+          <div class="restourant-selection__item-time">40 - 50 Min</div>
+        </div>
+        <div class="restourant-selection__item">
+          <div class="restourant-selection__item-img restourant-selection__item-img_milk-bar"></div>
+          <div class="restourant-selection__item-name">Milk Bar</div>
+          <div class="restourant-selection__item-kitchen">₴₴ • Десерти • Європейська</div>
+          <div class="restourant-selection__item-time">25 - 35 Min</div>
+        </div>
+        <div class="restourant-selection__item">
+          <div class="restourant-selection__item-img restourant-selection__item-img_mimosa_brooklyn_pizza"></div>
+          <div class="restourant-selection__item-name">Mimosa Brooklyn Pizza</div>
+          <div class="restourant-selection__item-kitchen">₴₴ • Італійська • Піца • Американська</div>
+          <div class="restourant-selection__item-time">15 - 25 Min</div>
+        </div>
+        <div class="restourant-selection__item">
+          <div class="restourant-selection__item-img restourant-selection__item-img_to-be"></div>
+          <div class="restourant-selection__item-name">To Be</div>
+          <div class="restourant-selection__item-kitchen">₴₴ • Японська • Азіатська • Суші</div>
+          <div class="restourant-selection__item-time">25 - 35 Min</div>
+        </div>
+        <div class="restourant-selection__item">
+          <div class="restourant-selection__item-img restourant-selection__item-img_druzi-cafe"></div>
+          <div class="restourant-selection__item-name">Druzi Cafe (вул. Прорізна)</div>
+          <div class="restourant-selection__item-kitchen">₴₴ • Американська • Сучасна європейська • У...</div>
+          <div class="restourant-selection__item-time">30 - 40 Min</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="section__wrapper footer__wrapper">
+    <div class="section footer__section">
+      <a href="javscript:void(0)" class="footer__logo">
+        <img class="footer__logo-img" src="./img/footer-logo.svg" alt="uber eats" />
+      </a>
+    </div>
+    <div class="section footer-content">
+      <div class="footer-content__social">
+        <div class="footer-content__language-wrapper">
+          <div class="footer-content__language">
+            <div class="footer-content__language-icon">
+              <svg viewBox="0 0 64 64" width="15.72px" height="15.72px" class="footer-content__language-icon-item"
+                data-reactid="58">
+                <path
+                  d="M33.702 4.591c-.31-.035-.619-.087-.934-.087-.092 0-.182.023-.273.026-.164-.003-.326-.026-.491-.026-15.439 0-28 12.562-28 28 0 15.44 12.561 28 28 28 .165 0 .327-.022.49-.025.092.003.182.025.274.025.315 0 .624-.05.934-.087 14.648-.884 26.302-13.046 26.302-27.913S48.35 5.476 33.702 4.591zM23.622 9.5c-2.836 3.274-5.14 7.975-6.405 13.527-3.934-.427-6.308-.924-7.265-1.154a24.598 24.598 0 0 1 13.67-12.373zM7.492 32.504c0-2.568.4-5.044 1.135-7.37.668.18 3.222.811 7.949 1.336a43.512 43.512 0 0 0-.427 6.034c0 2.643.253 5.178.683 7.587-4.055.44-6.553.959-7.674 1.23a24.341 24.341 0 0 1-1.666-8.817zm3.19 12.049c1.268-.27 3.54-.679 6.898-1.03 1.321 4.888 3.47 9.019 6.044 11.987A24.614 24.614 0 0 1 10.68 44.553zM30 56.697c-3-1.256-7.418-6.459-9.229-13.473 2.604-.193 6.229-.331 9.229-.367v13.84zm0-17.326c-3 .038-7.083.192-9.867.408-.383-2.31-.492-4.754-.492-7.275 0-1.96.038-3.868.275-5.711 2.827.224 7.084.385 10.084.425V39.37zm0-15.64c-3-.037-6.922-.189-9.604-.394C22.071 15.542 27 9.66 30 8.312V23.73zm23.966-2.05c-.547.168-2.763.786-7.146 1.305-.989-5.26-2.774-9.742-5.102-12.978 5.337 2.313 9.677 6.477 12.248 11.672zM34 8.26c3 1.245 7.944 7.18 9.587 15.072-2.639.21-6.587.363-9.587.4V8.26zm0 18.958c3-.039 7.205-.204 9.997-.436.23 1.846.288 3.757.288 5.722 0 2.524-.09 4.972-.462 7.285-2.749-.222-6.823-.382-9.823-.418V27.218zm0 29.531V42.857c3 .036 6.652.177 9.222.375C41.442 50.34 37 55.588 34 56.75zm7.718-1.747c2.098-2.916 3.769-6.83 4.8-11.427 3.448.397 5.62.859 6.715 1.135a24.649 24.649 0 0 1-11.515 10.292zm5.42-14.87a52.727 52.727 0 0 0 .21-13.7c5.39-.647 7.776-1.458 7.934-1.514l-.563-1.59a24.344 24.344 0 0 1 1.8 9.176c0 3.183-.63 6.218-1.74 9.01-.963-.281-3.384-.883-7.64-1.383z"
+                  data-reactid="59">
+                </path>
+              </svg>
+            </div>
+            <div class="footer-content__language-text">
+              ENGLISH
+            </div>
+            <div class="footer-content__language-arrow">
+              <img src="./img/arrow_down.svg" alt="language arrow">
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-content__social-hashtag"><span class="footer-content__social-hashtag-item">#</span>UberEats
+        </div>
+        <div class="footer-content__social-links">
+          <a href="javscript:void(0)" class="facebook-icon">
+            <img src="./img/facebook.svg" alt="basket" class="facebook-icon__img">
+          </a>
+          <a href="javscript:void(0)" class="twitter-icon">
+            <img src="./img/twitter.svg" alt="basket" class="twitter-icon__img">
+          </a>
+          <a href="javscript:void(0)" class="instagram-icon">
+            <img src="./img/instagram.svg" alt="basket" class="instagram-icon__img">
+          </a>
+        </div>
+      </div>
+      <div class="footer-content__about-links">
+        <a href="javscript:void(0)" class="footer-content__social-links-item">About UberEats</a>
+        <a href="javscript:void(0)" class="footer-content__social-links-item">Become a Delivery Partner</a>
+        <a href="javscript:void(0)" class="footer-content__social-links-item">Become a Restaurant Partner</a>
+      </div>
+      <div class="footer-content__help-links footer-content__help-links_margin">
+        <a href="javscript:void(0)" class="footer-content__social-links-item">See all cities</a>
+        <a href="javscript:void(0)" class="footer-content__social-links-item">Pricing</a>
+        <a href="javscript:void(0)" class="footer-content__social-links-item">Help</a>
+        <a href="javscript:void(0)" class="footer-content__social-links-item">FAQs</a>
+      </div>
+    </div>
+    <div class="section footer__download-app">
+      <a href="javscript:void(0)" class="download-app-icon">
+        <img src="./img/download_on_the_App_Store.svg" alt="basket" class="download-app-apple__img">
+      </a>
+      <a href="javscript:void(0)" class="download-app-icon">
+        <img src="./img/google_play.svg" alt="basket" class="download-app-google__img">
+      </a>
+    </div>
+    <div class="section footer__privacy">
+      <div class="section footer__privacy-item">© 2019 Uber Technologies Inc.</div>
+      <div class="section footer__privacy-item">Privacy</div>
+      <div class="section footer__privacy-item">Terms</div>
+    </div>
+  </footer>
 </body>
 
 </html>

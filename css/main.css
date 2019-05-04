@@ -6,6 +6,11 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__wrapper {
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
 
@@ -18,19 +23,31 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 17px 0 15px;
+  padding: 14px 0 15px;
 }
 
-.header__logo-img {
-  margin: 0;
-}
-
-.location-form {
+.location {
   flex: 0 0 389px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 92px 0 112.38px;
+  margin: 0 92px 0 119.6px;
+}
+
+.location__time {
+  flex: 0 0 65px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid #E0E0E0;
+  line-height: 24px;
+  border-radius: 2px;
+  font-size: 16px;
+  min-height: 40px;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 .location-form__input {
@@ -39,7 +56,14 @@ body {
   border-radius: 2px;
   font-size: 16px;
   min-height: 40px;
+  transition: .6s;
+  outline: none;
   box-sizing: border-box;
+}
+
+.location-form__input:focus {
+  border: 1.3px solid rgba(38, 38, 38, .5);
+  transition: .6s;
 }
 
 ::-webkit-input-placeholder {
@@ -50,23 +74,12 @@ body {
   color: #1D1D1D;
 }
 
-/* Firefox 19+ */
 :-moz-placeholder {
   color: #1D1D1D;
 }
 
-/* Firefox 18- */
 :-ms-input-placeholder {
   color: #1D1D1D;
-}
-
-  {}
-
-.location-form__input_from {
-  flex: 0 0 65px;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .location-form__input_where {
@@ -100,24 +113,283 @@ body {
   min-height: 40px;
   width: 80px;
   font-weight: 500;
+  box-sizing: border-box;
 }
 
-.btn:hover{
-  
+.btn:hover {
+  background-color: #57ad5d;
+  color: #fff;
 }
 
 .header-buttons__btn_sing-in {
   background-color: #fff;
   color: #1D1D1D;
   border: 1px solid #E0E0E0;
+  margin-right: 12px;
 }
 
 .header-buttons__btn_register {
   background-color: #262626;
   color: #fff;
-  margin-left: 16px;
+  margin-right: 27px;
 }
 
-.header-busket{
-  margin-left: 27px;
+
+
+/* main */
+
+.main {
+  padding-top: 40px;
+  margin-bottom: 80px;
 }
+
+.form__section {
+  box-shadow: rgba(117, 117, 117, .3) 0px 1px 0px 0px;
+  mix-blend-mode: normal;
+  margin-bottom: 56px;
+}
+
+.search-form__input {
+  background: url(../img/search.svg) no-repeat;
+  background-size: 22px 21.9px;
+  background-position: left center;
+  padding-left: 36px;
+  flex: 0 0 292px;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+  margin-bottom: 15px;
+  mix-blend-mode: normal;
+
+}
+
+.search-form__input::-webkit-input-placeholder {
+  color: #626262;
+  opacity: 0.5;
+}
+
+.search-form__input::-moz-placeholder {
+  color: #626262;
+  opacity: 0.5;
+}
+
+.search-form__input:-moz-placeholder {
+  color: #626262;
+  opacity: 0.5;
+}
+
+.search-form__input:-ms-input-placeholder {
+  color: #626262;
+  opacity: 0.5;
+}
+
+
+.restaurants__section-title {
+  font-size: 22px;
+  line-height: 34px;
+  color: #1D1D1D;
+  margin-bottom: 16px;
+}
+
+.restourant-selection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.restourant-selection__item {
+  flex: 0 1 308px;
+  min-height: 366px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.restourant-selection__item:hover {
+  background: rgba(117, 117, 117, .04);
+}
+
+.restourant-selection__item-img {
+  background-size: cover;
+  min-height: 256px;
+}
+
+.restourant-selection__item-img_macdonalds {
+  background-image: url(../img/macDonalds.jpg);
+}
+
+.restourant-selection__item-img_wokwei {
+  background-image: url(../img/wokwei.jpg);
+}
+
+.restourant-selection__item-img_yizha {
+  background-image: url(../img/yizha.jpg);
+}
+
+.restourant-selection__item-img_musafir {
+  background-image: url(../img/musafir.jpg);
+}
+
+.restourant-selection__item-img_wokwei-2 {
+  background-image: url(../img/wokwei_2.jpg);
+}
+
+.restourant-selection__item-img_milk-bar {
+  background-image: url(../img/milk_bar.jpg);
+}
+
+.restourant-selection__item-img_mimosa_brooklyn_pizza {
+  background-image: url(../img/mimosa_brooklyn_pizza.jpg);
+}
+
+.restourant-selection__item-img_to-be {
+  background-image: url(../img/to_be.jpg);
+}
+
+.restourant-selection__item-img_druzi-cafe {
+  background-image: url(../img/druzi_cafe.jpg);
+}
+
+.restourant-selection__item-name {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1D;
+  margin-top: 14px;
+}
+
+.restourant-selection__item-kitchen {
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+}
+
+.restourant-selection__item-time {
+  font-size: 13px;
+  line-height: 21px;
+  color: #1D1D1D;
+  margin-bottom: 20px;
+}
+
+
+
+/* footer */
+
+.footer__wrapper {
+  background-color: #262626;
+}
+
+.footer__section {
+  margin-top: 56.38px;
+}
+
+.footer__logo {
+  border-bottom: 1px solid rgba(224, 224, 224, .4);
+  box-sizing: border-box;
+  display: block;
+}
+
+.footer__logo-img {
+  margin-bottom: 40.4px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(224, 224, 224, .4);
+  min-height: 220px;
+}
+
+.footer-content__language-wrapper{
+  display: flex;
+}
+
+.footer-content__language{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: #3B3B3B;
+  border-radius: 2px;
+  flex: 0 0 227px;
+  width: 100%;
+  min-height: 40px;
+  padding: 0 8px 0 16px;
+  margin-bottom: 33px;
+  cursor: pointer;
+}
+
+.footer-content__language-text{
+  margin-left: 16.28px;
+  margin-right: 103px;
+}
+
+.footer-content__social-links-item {
+  display: block;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 23px;
+}
+
+.footer-content__social-links-item:hover{
+  color: rgba(117, 117, 117, .8);
+}
+
+.footer-content__language-icon-item{
+  fill: #fff;
+}
+
+.footer-content__social-hashtag{
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  margin-bottom: 20.8px;
+}
+
+.footer-content__social-hashtag-item{
+  color: #49A144;
+  margin-right: 2px;
+}
+
+.footer-content__help-links_margin{
+  margin-right: 236px;
+}
+
+.footer__download-app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  border-bottom: 1px solid rgba(224, 224, 224, .4);
+}
+
+.download-app-icon{
+  margin-right: 41.22px;
+}
+
+.footer__privacy {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 93px;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.facebook-icon__img:hover{
+  background: #4267b2;
+}
+
+.twitter-icon__img:hover{
+  background: #1da1f2;
+}
+
+.instagram-icon__img:hover{
+  background: rgb(236, 38, 120);
+}
+
+
