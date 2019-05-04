@@ -1,0 +1,123 @@
+body {
+  font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+}
+
+.section__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+.section {
+  max-width: 945.5px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0 15px;
+}
+
+.header__logo-img {
+  margin: 0;
+}
+
+.location-form {
+  flex: 0 0 389px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 92px 0 112.38px;
+}
+
+.location-form__input {
+  border: 1px solid #E0E0E0;
+  line-height: 24px;
+  border-radius: 2px;
+  font-size: 16px;
+  min-height: 40px;
+  box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+  color: #1D1D1D;
+}
+
+::-moz-placeholder {
+  color: #1D1D1D;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #1D1D1D;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #1D1D1D;
+}
+
+  {}
+
+.location-form__input_from {
+  flex: 0 0 65px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.location-form__input_where {
+  background: url(../img/location_icon.svg) no-repeat;
+  background-size: 12px 14.79px;
+  background-position: 12px center;
+  padding-left: 36px;
+  flex: 0 0 292px;
+  width: 100%;
+}
+
+.location-form__beetwen-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;
+  margin: 0 9px;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  border-radius: 2px;
+  text-align: center;
+  transition: background-color .1s ease;
+  cursor: pointer;
+  min-height: 40px;
+  width: 80px;
+  font-weight: 500;
+}
+
+.btn:hover{
+  
+}
+
+.header-buttons__btn_sing-in {
+  background-color: #fff;
+  color: #1D1D1D;
+  border: 1px solid #E0E0E0;
+}
+
+.header-buttons__btn_register {
+  background-color: #262626;
+  color: #fff;
+  margin-left: 16px;
+}
+
+.header-busket{
+  margin-left: 27px;
+}
