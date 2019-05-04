@@ -18,7 +18,7 @@ body {
 }
 
 .section {
-  max-width: 945.5px;
+  max-width: 956px;
   width: 100%;
 }
 
@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 0 15px;
+  padding: 15px 0 15px;
 }
 
 .location {
@@ -34,7 +34,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 92px 0 119.6px;
+  margin: 0 92px 0 123.38px;
 }
 
 .location__time {
@@ -92,6 +92,7 @@ body {
   padding-left: 36px;
   flex: 0 0 292px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .location-form__beetwen-text {
@@ -128,7 +129,7 @@ body {
   background-color: #fff;
   color: #1D1D1D;
   border: 1px solid #E0E0E0;
-  margin-right: 12px;
+  margin-right: 16px;
 }
 
 .header-buttons__btn_register {
@@ -292,10 +293,11 @@ body {
   border-bottom: 1px solid rgba(224, 224, 224, .4);
   box-sizing: border-box;
   display: block;
+  box-sizing: border-box;
 }
 
 .footer__logo-img {
-  margin-bottom: 40.4px;
+  margin-bottom: 39px;
 }
 
 .footer-content {
@@ -323,11 +325,14 @@ body {
   padding: 0 8px 0 16px;
   margin-bottom: 33px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .footer-content__language-text{
   margin-left: 16.28px;
-  margin-right: 103px;
+  margin-right: 92px;
+  font-size: 13px;
+  line-height: 15px;
 }
 
 .footer-content__social-links-item {
