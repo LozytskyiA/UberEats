@@ -401,3 +401,13 @@ body {
 }
 
 
+.scrollup{
+  position:fixed;
+  width: 80px;
+  min-height: 80px;
+  bottom:50px;
+  right:16px;
+  display:none;
+  text-indent:-9999px;
+  background: url('../img/btn-up.svg') no-repeat;
+}
